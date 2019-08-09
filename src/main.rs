@@ -1,3 +1,5 @@
+use morse::waveform;
+
 fn main() {
-    println!("Hello, world!");
+    waveform::gen_waveform("abc abc abc", 10, 8);
 }
