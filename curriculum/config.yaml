@@ -24,11 +24,11 @@
 
 - title: "Letters: m, i"
   base_speed:
-    wpm: 8
+    wpm: 5
     farnsworth: 5
   incr_speed:
     wpm: 8
-    farnsworth: 8
+    farnsworth: 5
   words:
     - m
     - team
@@ -86,9 +86,9 @@
 - title: "Review: first eight letters (faster)"
   base_speed:
     wpm: 8
-    farnsworth: 5
+    farnsworth: 8
   incr_speed:
-    wpm: 8
+    wpm: 10
     farnsworth: 8
   words:
     - moment
@@ -105,9 +105,9 @@
 - title: "Letters: h, r"
   base_speed:
     wpm: 8
-    farnsworth: 5
+    farnsworth: 8
   incr_speed:
-    wpm: 8
+    wpm: 10
     farnsworth: 8
   words:
     - h
@@ -126,9 +126,9 @@
 - title: "Letters: d, l"
   base_speed:
     wpm: 8
-    farnsworth: 5
+    farnsworth: 8
   incr_speed:
-    wpm: 8
+    wpm: 10
     farnsworth: 8
   words:
     - d
@@ -147,9 +147,9 @@
 - title: "Review: first 12 letters"
   base_speed:
     wpm: 8
-    farnsworth: 5
+    farnsworth: 8
   incr_speed:
-    wpm: 8
+    wpm: 10
     farnsworth: 8
   words:
     - homeland
@@ -165,11 +165,11 @@
 
 - title: "Review: first 12 letters (faster)"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 10
+    farnsworth: 10
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 12
+    farnsworth: 10
   words:
     - homeland
     - lender
@@ -184,11 +184,11 @@
 
 - title: "Letters: c, u"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 10
+    farnsworth: 10
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 12
+    farnsworth: 10
   words:
     - c
     - colonial
@@ -205,11 +205,11 @@
 
 - title: "Letters: w, f"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 10
+    farnsworth: 10
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 12
+    farnsworth: 10
   words:
     - w
     - show
@@ -226,11 +226,11 @@
 
 - title: "Review: first 16 letters"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 10
+    farnsworth: 10
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 12
+    farnsworth: 10
   words:
     - renew
     - thunder
@@ -245,11 +245,11 @@
 
 - title: "Review: first 16 letters (faster)"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 12
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 12
   words:
     - renew
     - thunder
@@ -264,11 +264,11 @@
 
 - title: "Letters: g, y"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 12
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 12
   words:
     - g
     - gate
@@ -285,11 +285,11 @@
 
 - title: "Letters: p, b"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 12
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 12
   words:
     - p
     - part
@@ -306,11 +306,11 @@
 
 - title: "Review: first 20 letters"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 12
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 12
   words:
     - touring
     - rebound
@@ -325,11 +325,11 @@
 
 - title: "Review: first 20 letters (faster)"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 15
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 15
   words:
     - touring
     - rebound
@@ -344,11 +344,11 @@
 
 - title: "Letters: v, k"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 15
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 15
   words:
     - v
     - five
@@ -365,11 +365,11 @@
 
 - title: "Letter: j"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 15
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 15
   words:
     - j
     - job
@@ -384,11 +384,11 @@
 
 - title: "Letter: x"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 15
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 15
   words:
     - x
     - text
@@ -403,11 +403,11 @@
 
 - title: "Letter: q"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 15
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 15
   words:
     - q
     - quite
@@ -422,11 +422,11 @@
 
 - title: "Letter: z"
   base_speed:
-    wpm: 8
-    farnsworth: 5
+    wpm: 15
+    farnsworth: 12
   incr_speed:
-    wpm: 8
-    farnsworth: 8
+    wpm: 15
+    farnsworth: 15
   words:
     - z
     - size
@@ -438,3 +438,5 @@
     - bronze
     - characterize
     - personalized
+
+
