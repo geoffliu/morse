@@ -1,0 +1,44 @@
+- title: Letters: a, e, n, t
+  base_speed:
+    wpm: 5
+    farnsworth: 5
+  incr_speed:
+    wpm: 5
+    farnsworth: 8
+  words:
+    - a
+    - n
+    - an
+    - anna
+    - t
+    - at
+    - tan
+    - ant
+    - e
+    - ten
+    - eat
+    - net
+    - neat
+    - tent
+
+- title: Letters: m, i
+  base_speed:
+    wpm: 5
+    farnsworth: 8
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - m
+    - team
+    - man
+    - mean
+    - meet
+    - meant
+    - i
+    - nine
+    - mine
+    - mint
+    - intimate
+    - annie
+
