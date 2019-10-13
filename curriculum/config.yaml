@@ -182,3 +182,259 @@
     - determine
     - metadata
 
+- title: "Letters: c, u"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - c
+    - colonial
+    - scientist
+    - essence
+    - control
+    - recommend
+    - u
+    - sauce
+    - manual
+    - cloud
+    - conclude
+    - construction
+
+- title: "Letters: w, f"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - w
+    - show
+    - writer
+    - tower
+    - sweden
+    - warrant
+    - f
+    - fill
+    - fiscal
+    - after
+    - fraud
+    - referral
+
+- title: "Review: first 16 letters"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - renew
+    - thunder
+    - chelsea
+    - considers
+    - enhancements
+    - newfoundland
+    - momentum
+    - commitments
+    - fundamentals
+    - dictionaries
+
+- title: "Review: first 16 letters (faster)"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - renew
+    - thunder
+    - chelsea
+    - considers
+    - enhancements
+    - newfoundland
+    - momentum
+    - commitments
+    - fundamentals
+    - dictionaries
+
+- title: "Letters: g, y"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - g
+    - gate
+    - organ
+    - guided
+    - integral
+    - assuming
+    - y
+    - cycle
+    - candy
+    - suddenly
+    - grocery
+    - alloy
+
+- title: "Letters: p, b"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - p
+    - part
+    - rope
+    - prime
+    - duplicate
+    - propose
+    - b
+    - robe
+    - barrier
+    - mobile
+    - chamber
+    - arbitrary
+
+- title: "Review: first 20 letters"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - touring
+    - rebound
+    - presently
+    - pursuit
+    - barbie
+    - asylum
+    - bacterial
+    - fridge
+    - highway
+    - annoying
+
+- title: "Review: first 20 letters (faster)"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - touring
+    - rebound
+    - presently
+    - pursuit
+    - barbie
+    - asylum
+    - bacterial
+    - fridge
+    - highway
+    - annoying
+
+- title: "Letters: v, k"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - v
+    - five
+    - seven
+    - heavily
+    - observe
+    - vaccine
+    - k
+    - know
+    - folks
+    - think
+    - yukon
+    - tackle
+
+- title: "Letter: j"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - j
+    - job
+    - july
+    - joy
+    - juice
+    - adjust
+    - joke
+    - object
+    - junction
+    - jacksonville
+
+- title: "Letter: x"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - x
+    - text
+    - index
+    - syntax
+    - exhibit
+    - fixes
+    - examine
+    - exclude
+    - texture
+    - relaxation
+
+- title: "Letter: q"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - q
+    - quite
+    - question
+    - request
+    - require
+    - quality
+    - quarters
+    - aquatic
+    - consequence
+    - frequency
+
+- title: "Letter: z"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - z
+    - size
+    - pizza
+    - puzzle
+    - zone
+    - buzz
+    - realize
+    - bronze
+    - characterize
+    - personalized
