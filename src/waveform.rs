@@ -28,12 +28,7 @@ fn get_wave(length: usize) -> Vec<i32> {
     }).collect()
 }
 
-pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
-    assert!(fwpm <= wpm);
-    let lower = content.to_lowercase();
-
-    let mut result = Vec::new();
-
+fn get_unit_times(wpm: i32, fwpm: i32) -> (usize, usize) {
     let wf = wpm as f64;
     let ff = fwpm as f64;
 
@@ -42,14 +37,30 @@ pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
 
     let unit = (unit_time * SAMPLE_RATE_F) as usize;
     let f_unit = (f_unit_time * SAMPLE_RATE_F) as usize;
+    (unit, f_unit)
+}
 
+pub fn gen_word_boundary(wpm: i32, fwpm: i32) -> Vec<i32> {
+    let (_, f_unit) = get_unit_times(wpm, fwpm);
+    vec![0; f_unit * 7]
+}
+
+pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
+    assert!(fwpm <= wpm);
+    let lower = content.to_lowercase();
+
+    let mut result = Vec::new();
+
+    let (unit, f_unit) = get_unit_times(wpm, fwpm);
     let dit = get_wave(unit);
     let dah = get_wave(unit * 3);
     let zeros = vec![0; unit];
     let f_zeros = vec![0; f_unit];
 
-    for word in lower.split_whitespace() {
-        for c in word.chars() {
+    let words: Vec<&str> = lower.split_whitespace().collect();
+
+    for (wi, word) in words.iter().enumerate() {
+        for (ci, c) in word.chars().enumerate() {
             let pattern = get_morse(c);
 
             for d in pattern.chars() {
@@ -57,12 +68,16 @@ pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
                 result.extend(&zeros);
             }
 
-            for _i in 0..3 {
-                result.extend(&f_zeros);
+            if ci + 1 < word.len() {
+                for _i in 0..3 {
+                    result.extend(&f_zeros);
+                }
             }
         }
-        for _i in 0..7 {
-            result.extend(&f_zeros);
+        if wi + 1 < words.len() {
+            for _i in 0..7 {
+                result.extend(&f_zeros);
+            }
         }
     }
 

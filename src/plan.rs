@@ -31,6 +31,9 @@ pub fn write_lesson_file(filename: &str, lesson: &Lesson) {
         }
     };
 
+    let word_boundary = waveform::gen_word_boundary(
+        lesson.base_speed.wpm, lesson.base_speed.farnsworth);
+
     for word in &lesson.words {
         let wave_file = format!("publish/words/{}.wav", &word);
         let spoken_wave = waveform::read_wav(&wave_file);
@@ -41,9 +44,15 @@ pub fn write_lesson_file(filename: &str, lesson: &Lesson) {
         let incr_wave = waveform::gen_waveform(
             &word, lesson.incr_speed.wpm, lesson.incr_speed.farnsworth);
 
+        append_wav(&word_boundary);
         append_wav(&base_wave);
+        append_wav(&word_boundary);
         append_wav(&base_wave);
+        append_wav(&word_boundary);
         append_wav(&incr_wave);
+        append_wav(&word_boundary);
         append_wav(&incr_wave);
+        append_wav(&word_boundary);
+        append_wav(&word_boundary);
     }
 }
