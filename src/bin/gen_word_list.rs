@@ -4,7 +4,7 @@ use std::collections::HashSet;
 use std::io::Result;
 
 fn get_word_list() -> Result<Vec<String>> {
-    let file_content = fs::read_to_string("words.txt")?;
+    let file_content = fs::read_to_string("curriculum/words.txt")?;
     Ok(file_content.lines().map(|x| x.to_string()).collect())
 }
 

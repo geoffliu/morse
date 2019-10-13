@@ -16,7 +16,7 @@ pub struct Lesson {
 }
 
 pub fn get_lesson_plan() -> Vec<Lesson> {
-    let file_content = fs::read_to_string("lessons.yaml").unwrap();
+    let file_content = fs::read_to_string("lesson/config.yaml").unwrap();
     serde_yaml::from_str(&file_content).unwrap()
 }
 
