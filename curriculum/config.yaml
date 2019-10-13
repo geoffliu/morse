@@ -83,7 +83,7 @@
     - estate
     - nominations
 
-- title: "Review: first eight letters (faster)"
+- title: "Review and speed practice: 8 - 10 WPM"
   base_speed:
     wpm: 8
     farnsworth: 8
@@ -163,7 +163,26 @@
     - determine
     - metadata
 
-- title: "Review: first 12 letters (faster)"
+- title: "Review and speed practice: 8 - 10 WPM"
+  base_speed:
+    wpm: 10
+    farnsworth: 8
+  incr_speed:
+    wpm: 10
+    farnsworth: 10
+  words:
+    - homeland
+    - lender
+    - denial
+    - remedies
+    - endorsement
+    - transmit
+    - isolation
+    - oriental
+    - determine
+    - metadata
+
+- title: "Review and speed practice: 10 - 12 WPM"
   base_speed:
     wpm: 10
     farnsworth: 10
@@ -243,7 +262,26 @@
     - fundamentals
     - dictionaries
 
-- title: "Review: first 16 letters (faster)"
+- title: "Review and speed practice: 10 - 12 WPM"
+  base_speed:
+    wpm: 12
+    farnsworth: 10
+  incr_speed:
+    wpm: 12
+    farnsworth: 12
+  words:
+    - renew
+    - thunder
+    - chelsea
+    - considers
+    - enhancements
+    - newfoundland
+    - momentum
+    - commitments
+    - fundamentals
+    - dictionaries
+
+- title: "Review and speed practice: 12 - 15 WPM"
   base_speed:
     wpm: 12
     farnsworth: 12
@@ -323,7 +361,7 @@
     - highway
     - annoying
 
-- title: "Review: first 20 letters (faster)"
+- title: "Review and speed practice: 15 WPM"
   base_speed:
     wpm: 15
     farnsworth: 12
