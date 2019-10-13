@@ -15,7 +15,7 @@ fn get_morse(c: char) -> &'static str {
         'n' => "-.",
         'm' => "--",
         't' => "-",
-        _ => panic!("Unknown char")
+        _ => panic!("Unknown char: {}", c)
     }
 }
 
@@ -30,6 +30,7 @@ fn get_wave(length: usize) -> Vec<i32> {
 
 pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
     assert!(fwpm <= wpm);
+    let lower = content.to_lowercase();
 
     let mut result = Vec::new();
 
@@ -47,7 +48,7 @@ pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
     let zeros = vec![0; unit];
     let f_zeros = vec![0; f_unit];
 
-    for word in content.split_whitespace() {
+    for word in lower.split_whitespace() {
         for c in word.chars() {
             let pattern = get_morse(c);
 
@@ -68,17 +69,25 @@ pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
     result
 }
 
-pub fn write_wav(filename: &str, wave_data: &[i32]) {
-    let spec = hound::WavSpec {
+pub fn get_wave_spec() -> hound::WavSpec {
+    hound::WavSpec {
         channels: 1,
         sample_rate: SAMPLE_RATE,
         bits_per_sample: 32,
         sample_format: hound::SampleFormat::Int
-    };
+    }
+}
 
-    let mut writer = hound::WavWriter::create(filename, spec).unwrap();
+pub fn write_wav(filename: &str, wave_data: &[i32]) {
+    let mut writer = hound::WavWriter::create(filename, get_wave_spec()).unwrap();
     for d in wave_data {
         writer.write_sample(*d).unwrap();
     }
+}
+
+pub fn read_wav(filename: &str) -> Vec<i32> {
+    let reader = hound::WavReader::open(filename).unwrap();
+    assert!(reader.spec() == get_wave_spec());
+    reader.into_samples::<i32>().map(|s| s.unwrap()).collect()
 }
 
