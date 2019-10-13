@@ -1,4 +1,5 @@
-- title: Letters: a, e, n, t
+---
+- title: "Letters: a, e, n, t"
   base_speed:
     wpm: 5
     farnsworth: 5
@@ -21,7 +22,7 @@
     - neat
     - tent
 
-- title: Letters: m, i
+- title: "Letters: m, i"
   base_speed:
     wpm: 5
     farnsworth: 8
