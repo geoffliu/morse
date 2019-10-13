@@ -4,8 +4,8 @@
     wpm: 5
     farnsworth: 5
   incr_speed:
-    wpm: 5
-    farnsworth: 8
+    wpm: 8
+    farnsworth: 5
   words:
     - a
     - n
@@ -24,8 +24,8 @@
 
 - title: "Letters: m, i"
   base_speed:
-    wpm: 5
-    farnsworth: 8
+    wpm: 8
+    farnsworth: 5
   incr_speed:
     wpm: 8
     farnsworth: 8

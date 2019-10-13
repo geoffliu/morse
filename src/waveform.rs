@@ -23,6 +23,8 @@ fn get_wave(length: usize) -> Vec<i32> {
 }
 
 pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
+    assert!(fwpm <= wpm);
+
     let mut result = Vec::new();
 
     let wf = wpm as f64;
