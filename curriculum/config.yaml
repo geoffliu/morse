@@ -43,3 +43,142 @@
     - intimate
     - annie
 
+- title: "Letters: o, s"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - o
+    - too
+    - note
+    - moon
+    - notion
+    - tomato
+    - s
+    - sit
+    - some
+    - east
+    - mission
+    - estimate
+
+- title: "Review: first eight letters"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - moment
+    - statement
+    - animation
+    - testament
+    - tension
+    - instant
+    - oasis
+    - season
+    - estate
+    - nominations
+
+- title: "Review: first eight letters (faster)"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - moment
+    - statement
+    - animation
+    - testament
+    - tension
+    - instant
+    - oasis
+    - season
+    - estate
+    - nominations
+
+- title: "Letters: h, r"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - h
+    - the
+    - heat
+    - theme
+    - host
+    - shame
+    - r
+    - rate
+    - store
+    - enter
+    - interest
+    - harris
+
+- title: "Letters: d, l"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - d
+    - date
+    - and
+    - media
+    - domain
+    - amendment
+    - l
+    - lime
+    - roll
+    - lesson
+    - malta
+    - threshold
+
+- title: "Review: first 12 letters"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - homeland
+    - lender
+    - denial
+    - remedies
+    - endorsement
+    - transmit
+    - isolation
+    - oriental
+    - determine
+    - metadata
+
+- title: "Review: first 12 letters (faster)"
+  base_speed:
+    wpm: 8
+    farnsworth: 5
+  incr_speed:
+    wpm: 8
+    farnsworth: 8
+  words:
+    - homeland
+    - lender
+    - denial
+    - remedies
+    - endorsement
+    - transmit
+    - isolation
+    - oriental
+    - determine
+    - metadata
+

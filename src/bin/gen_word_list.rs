@@ -16,7 +16,7 @@ fn gen_incremental_list(base: &str, incr: &str) -> Result<()> {
 
     let final_words: Vec<_> = words.iter().filter(|s| {
         let word_set: HashSet<_> = s.chars().collect();
-        word_set.is_subset(&total_set) && incr_set.is_subset(&word_set)
+        word_set.is_subset(&total_set) && !incr_set.is_disjoint(&word_set)
     }).collect();
 
     println!("{:?}", &final_words);
