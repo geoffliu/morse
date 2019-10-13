@@ -3,16 +3,17 @@ use serde::Deserialize;
 
 #[derive(Deserialize)]
 pub struct Speed {
-    pub wpm: i32,
-    pub farnsworth: i32,
+    wpm: i32,
+    farnsworth: i32,
 }
 
 #[derive(Deserialize)]
 pub struct Lesson {
     pub title: String,
-    pub base_speed: Speed,
-    pub incr_speed: Speed,
     pub words: Vec<String>,
+
+    base_speed: Speed,
+    incr_speed: Speed,
 }
 
 pub fn get_lesson_plan() -> Vec<Lesson> {
@@ -20,4 +21,5 @@ pub fn get_lesson_plan() -> Vec<Lesson> {
     serde_yaml::from_str(&file_content).unwrap()
 }
 
-
+pub fn write_lesson_file() {
+}

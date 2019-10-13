@@ -1,5 +1,4 @@
 use std::env;
-use morse::io;
 use morse::waveform;
 
 fn main() {
@@ -9,6 +8,6 @@ fn main() {
     } else {
         let sentence = &args[2..].join(" ");
         let wav = waveform::gen_waveform(&sentence, 10, 8);
-        io::write_wav(&args[1], &wav);
+        waveform::write_wav(&args[1], &wav);
     }
 }

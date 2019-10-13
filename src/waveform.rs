@@ -1,6 +1,7 @@
 use std::f64::consts::PI;
+use hound;
 
-pub const SAMPLE_RATE: u32 = 44100;
+const SAMPLE_RATE: u32 = 44100;
 const SAMPLE_RATE_F: f64 = 44100.0;
 const TONE: f64 = 440.0;
 
@@ -9,6 +10,11 @@ fn get_morse(c: char) -> &'static str {
         'a' => ".-",
         'b' => "-...",
         'c' => "-.-.",
+        'e' => ".",
+        'i' => "..",
+        'n' => "-.",
+        'm' => "--",
+        't' => "-",
         _ => panic!("Unknown char")
     }
 }
@@ -61,3 +67,18 @@ pub fn gen_waveform(content: &str, wpm: i32, fwpm: i32) -> Vec<i32> {
 
     result
 }
+
+pub fn write_wav(filename: &str, wave_data: &[i32]) {
+    let spec = hound::WavSpec {
+        channels: 1,
+        sample_rate: SAMPLE_RATE,
+        bits_per_sample: 32,
+        sample_format: hound::SampleFormat::Int
+    };
+
+    let mut writer = hound::WavWriter::create(filename, spec).unwrap();
+    for d in wave_data {
+        writer.write_sample(*d).unwrap();
+    }
+}
+
