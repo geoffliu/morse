@@ -36,7 +36,7 @@ pub fn write_lesson_file(filename: &str, lesson: &Lesson) {
         lesson.base_speed.wpm, lesson.base_speed.farnsworth);
 
     for word in &lesson.words {
-        if lesson.suppress_spoken.unwrap_or(false) {
+        if !lesson.suppress_spoken.unwrap_or(false) {
             let wave_file = format!("publish/words/{}.wav", &word);
             let spoken_wave = waveform::read_wav(&wave_file);
             append_wav(&spoken_wave);
