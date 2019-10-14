@@ -13,6 +13,7 @@ pub struct Lesson {
     pub title: String,
     pub words: Vec<String>,
 
+    suppress_spoken: Option<bool>,
     base_speed: Speed,
     incr_speed: Speed,
 }
@@ -35,16 +36,18 @@ pub fn write_lesson_file(filename: &str, lesson: &Lesson) {
         lesson.base_speed.wpm, lesson.base_speed.farnsworth);
 
     for word in &lesson.words {
-        let wave_file = format!("publish/words/{}.wav", &word);
-        let spoken_wave = waveform::read_wav(&wave_file);
-        append_wav(&spoken_wave);
+        if lesson.suppress_spoken.unwrap_or(false) {
+            let wave_file = format!("publish/words/{}.wav", &word);
+            let spoken_wave = waveform::read_wav(&wave_file);
+            append_wav(&spoken_wave);
+            append_wav(&word_boundary);
+        }
 
         let base_wave = waveform::gen_waveform(
             &word, lesson.base_speed.wpm, lesson.base_speed.farnsworth);
         let incr_wave = waveform::gen_waveform(
             &word, lesson.incr_speed.wpm, lesson.incr_speed.farnsworth);
 
-        append_wav(&word_boundary);
         append_wav(&base_wave);
         append_wav(&word_boundary);
         append_wav(&base_wave);
