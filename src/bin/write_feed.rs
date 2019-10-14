@@ -7,7 +7,10 @@ fn main() -> Result<()> {
     let mut feed = File::create("publish/feed.rss")?;
     let mut writer = EmitterConfig::new().perform_indent(true).create_writer(&mut feed);
 
-    writer.write(XmlEvent::start_element("rss").attr("version", "2.0"))?;
+    writer.write(XmlEvent::start_element("rss")
+                 .attr("version", "2.0")
+                 .ns("itunes", "http://www.itunes.com/dtds/podcast-1.0.dtd")
+                 .ns("googleplay", "http://www.google.com/schemas/play-podcasts/1.0"))?;
     writer.write(XmlEvent::start_element("channel"))?;
 
     writer.write(XmlEvent::start_element("title"))?;
@@ -16,6 +19,14 @@ fn main() -> Result<()> {
 
     writer.write(XmlEvent::start_element("language"))?;
     writer.write(XmlEvent::characters("en-us"))?;
+    writer.write(XmlEvent::end_element())?;
+
+    writer.write(XmlEvent::start_element("googleplay:image")
+                 .attr("href", "https://www.geoffliu.me/morse/cover.jpg"))?;
+    writer.write(XmlEvent::end_element())?;
+
+    writer.write(XmlEvent::start_element("itunes:image")
+                 .attr("href", "https://www.geoffliu.me/morse/cover.jpg"))?;
     writer.write(XmlEvent::end_element())?;
 
     writer.write(XmlEvent::start_element("link"))?;
