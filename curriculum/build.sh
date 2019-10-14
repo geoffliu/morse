@@ -17,3 +17,6 @@ for wf in publish/wavs/*.wav; do
   Outfile=$(basename $wf | sed s/\.wav$/.mp3/)
   ffmpeg -i $wf -acodec libmp3lame -q:a 0 "publish/$Outfile"
 done
+
+cargo run --bin write_feed
+
