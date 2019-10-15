@@ -477,12 +477,12 @@
     - characterize
     - personalized
 
-- title: "Speed practice: 15 - 20 WPM"
+- title: "Review: ALL the letters!"
   base_speed:
     wpm: 15
-    farnsworth: 15
+    farnsworth: 12
   incr_speed:
-    wpm: 20
+    wpm: 15
     farnsworth: 15
   words:
     - whistle
@@ -552,13 +552,13 @@
     - sheet
     - brake
 
-- title: "Speed practice: 20 WPM"
+- title: "Speed practice: 15 - 18 WPM"
   base_speed:
-    wpm: 20
+    wpm: 15
     farnsworth: 15
   incr_speed:
-    wpm: 20
-    farnsworth: 20
+    wpm: 18
+    farnsworth: 15
   words:
     - whistle
     - apathetic
@@ -626,80 +626,287 @@
     - aspiring
     - sheet
     - brake
+
+- title: "Speed practice: 18 WPM"
+  base_speed:
+    wpm: 18
+    farnsworth: 15
+  incr_speed:
+    wpm: 18
+    farnsworth: 18
+  words:
+    - whistle
+    - apathetic
+    - useless
+    - advertisement
+    - detail
+    - weak
+    - texture
+    - fowl
+    - faded
+    - raise
+    - mailbox
+    - high
+    - polite
+    - one
+    - jar
+    - invite
+    - distinct
+    - collect
+    - half
+    - growth
+    - heat
+    - bare
+    - zephyr
+    - smile
+    - two
+    - delirious
+    - committee
+    - shock
+    - quickest
+    - petite
+    - rule
+    - stitch
+    - rapid
+    - calculate
+    - talented
+    - plane
+    - drab
+    - laborer
+    - wave
+    - sudden
+    - stomach
+    - current
+    - drum
+    - market
+    - panoramic
+    - good
+    - succeed
+    - wealthy
+    - grumpy
+    - hope
+    - aloof
+    - adventurous
+    - impolite
+    - frame
+    - learned
+    - comparison
+    - underwear
+    - employ
+    - cut
+    - price
+    - park
+    - sheep
+    - pretend
+    - aspiring
+    - sheet
+    - brake
+
+- title: "Speed practice: 18 WPM"
+  base_speed:
+    wpm: 18
+    farnsworth: 18
+  incr_speed:
+    wpm: 20
+    farnsworth: 18
+  words:
+    - fixed
+    - aback
+    - relax
+    - wholesale
+    - unhealthy
+    - redundant
+    - yard
+    - telling
+    - thin
+    - sound
+    - shoe
+    - cap
+    - bleach
+    - wild
+    - push
+    - snails
+    - cemetery
+    - fortunate
+    - downtown
+    - unbecoming
+    - victorious
+    - female
+    - girl
+    - cushion
+    - fit
+    - shirt
+    - tie
+    - insect
+    - treatment
+    - ship
+    - rod
+    - empty
+    - obsolete
+    - wiry
+    - complex
+    - insurance
+    - jealous
+    - memorize
+    - radiate
+    - nest
+    - sneaky
+    - squash
+    - umbrella
+    - fretful
+    - fancy
+    - start
+    - suit
+    - excited
+    - label
+    - leg
+    - daffy
+    - boiling
+    - capricious
+    - impartial
+    - tightfisted
+    - education
+    - painful
+    - elbow
+    - milk
+    - motionless
+
+- title: "Speed practice: 20 WPM"
+  base_speed:
+    wpm: 20
+    farnsworth: 18
+  incr_speed:
+    wpm: 20
+    farnsworth: 20
+  words:
+    - fixed
+    - aback
+    - relax
+    - wholesale
+    - unhealthy
+    - redundant
+    - yard
+    - telling
+    - thin
+    - sound
+    - shoe
+    - cap
+    - bleach
+    - wild
+    - push
+    - snails
+    - cemetery
+    - fortunate
+    - downtown
+    - unbecoming
+    - victorious
+    - female
+    - girl
+    - cushion
+    - fit
+    - shirt
+    - tie
+    - insect
+    - treatment
+    - ship
+    - rod
+    - empty
+    - obsolete
+    - wiry
+    - complex
+    - insurance
+    - jealous
+    - memorize
+    - radiate
+    - nest
+    - sneaky
+    - squash
+    - umbrella
+    - fretful
+    - fancy
+    - start
+    - suit
+    - excited
+    - label
+    - leg
+    - daffy
+    - boiling
+    - capricious
+    - impartial
+    - tightfisted
+    - education
+    - painful
+    - elbow
+    - milk
+    - motionless
 
 - title: "Speed practice: 20 WPM, no spoken words"
   suppress_spoken: true
   base_speed:
     wpm: 20
-    farnsworth: 15
+    farnsworth: 18
   incr_speed:
     wpm: 20
     farnsworth: 20
   words:
-    - whistle
-    - apathetic
-    - useless
-    - advertisement
-    - detail
-    - weak
-    - texture
-    - fowl
-    - faded
-    - raise
-    - mailbox
-    - high
-    - polite
-    - one
-    - jar
-    - invite
-    - distinct
-    - collect
-    - half
-    - growth
-    - heat
-    - bare
-    - zephyr
-    - smile
-    - two
-    - delirious
-    - committee
-    - shock
-    - quickest
-    - petite
-    - rule
-    - stitch
-    - rapid
-    - calculate
-    - talented
-    - plane
-    - drab
-    - laborer
-    - wave
-    - sudden
-    - stomach
-    - current
-    - drum
-    - market
-    - panoramic
-    - good
-    - succeed
-    - wealthy
-    - grumpy
-    - hope
-    - aloof
-    - adventurous
-    - impolite
-    - frame
-    - learned
-    - comparison
-    - underwear
-    - employ
-    - cut
-    - price
-    - park
-    - sheep
-    - pretend
-    - aspiring
-    - sheet
-    - brake
+    - fixed
+    - aback
+    - relax
+    - wholesale
+    - unhealthy
+    - redundant
+    - yard
+    - telling
+    - thin
+    - sound
+    - shoe
+    - cap
+    - bleach
+    - wild
+    - push
+    - snails
+    - cemetery
+    - fortunate
+    - downtown
+    - unbecoming
+    - victorious
+    - female
+    - girl
+    - cushion
+    - fit
+    - shirt
+    - tie
+    - insect
+    - treatment
+    - ship
+    - rod
+    - empty
+    - obsolete
+    - wiry
+    - complex
+    - insurance
+    - jealous
+    - memorize
+    - radiate
+    - nest
+    - sneaky
+    - squash
+    - umbrella
+    - fretful
+    - fancy
+    - start
+    - suit
+    - excited
+    - label
+    - leg
+    - daffy
+    - boiling
+    - capricious
+    - impartial
+    - tightfisted
+    - education
+    - painful
+    - elbow
+    - milk
+    - motionless
 
