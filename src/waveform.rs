@@ -40,18 +40,13 @@ fn get_morse(c: char) -> &'static str {
 fn get_wave(length: usize) -> Vec<i32> {
     let max = (std::i32::MAX - 10) as f64;
 
-    let mut result: Vec<i32> = (0..length).map(|t| {
+    let halfwave = 1.0 / 2.0 / TONE * SAMPLE_RATE_F;
+    let rounded_length = ((length as f64 / halfwave).round() * halfwave) as usize;
+
+    (0..rounded_length).map(|t| {
         let sample = (t as f64 / SAMPLE_RATE_F * TONE * 2.0 * PI).sin();
         (sample * max) as i32
-    }).collect();
-
-    let cutoff = std::i32::MAX / 10;
-    loop {
-        match result.last() {
-            Some(v) if v.abs() > cutoff => result.pop(),
-            _ => return result
-        };
-    }
+    }).collect()
 }
 
 fn get_unit_times(wpm: i32, fwpm: i32) -> (usize, usize) {
